@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<title>Title</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link href="{{url_for('static', filename='css/bootstrap.css' )}}" rel="stylesheet">
+  </head>
+  <body>
+  
+	<div class="container mt-5">
+  
+	{% block content %}
+	{% endblock %}
+
+	</div>
+
+
+	<!-- BootstrapJS, JQuery -->
+	<script src="{{url_for('static', filename='js/bootstrap.bundle.js')}}">
+	<script src="{{url_for('static', filename='js/jquery-3.6.0.js')}}">
+	
+  </body>
+</html>
