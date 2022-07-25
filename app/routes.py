@@ -4,6 +4,9 @@ import sqlite3
 
 DATABASE = '' # path to database file goes here
 
+app.config['app_name'] = 'HelloWorld'
+
+
 # sqlite db helpers
 def get_db():
     db = getattr(g, '_database', None)
