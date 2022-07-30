@@ -3,21 +3,28 @@
   <head>
 	<title>{{config['app_name']}}</title>
 	<link rel="icon" type="image/x-icon" href="{{url_for('static', filename='icon.png' )}}">
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<!-- Bootstrap CSS -->
 	<link href="{{url_for('static', filename='css/bootstrap.css' )}}" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
   </head>
   <body>
  
+	<h1>Hello</h1> <i class="fa fa-person"></i>
+	<i class="fa-solid fa-person"></i>
 	<div class="container mt-5">
  	
 	{% block content %}
 	{% endblock %}
 
 	</div>
-
 
 	<!-- BootstrapJS, JQuery -->
 	<script src="{{url_for('static', filename='js/bootstrap.bundle.js')}}">
